@@ -1,11 +1,9 @@
 <% provide(:title, @post.name) %>
 <p id="notice"><%= notice %></p>
-<p>
+<h3>
   <strong><%= @post.name %></strong>
-</p>
+</h3>
 
 <p>
-  <%= image_tag @post.url %>
+  <%= image_tag @post.url, class: "post-image" %>
 </p>
-<%= render 'posts/post_footer' %>
-
