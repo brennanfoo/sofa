@@ -5,5 +5,5 @@
 </h3>
 
 <p>
-  <%= image_tag @post.url.trim.html_safe, class: "post-image" %>
+  <%= image_tag @post.url.strip.html_safe, class: "post-image" %>
 </p>
