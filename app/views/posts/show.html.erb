@@ -1,8 +1,7 @@
 <% provide(:title, @post.name) %>
 <p id="notice"><%= notice %></p>
-<h3>
-  <strong><%= @post.name %></strong>
-</h3>
+<h1 class="post-title"><%= @post.name %>
+</h1>
 
 <p>
   <%= image_tag @post.url.strip.html_safe, class: "post-image" %>
