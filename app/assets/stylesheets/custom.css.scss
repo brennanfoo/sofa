@@ -44,11 +44,11 @@ $gray-medium-light: #eaeaea;
 
 @media screen and (max-width: 810px){
   .btn-50-width {
-    font-size: 5em;
+    font-size: 3em;
   }
 
   .post-title {
-    font-size: 6em;
+    font-size: 4em;
     font-weight: bold;
   }
 
@@ -70,10 +70,6 @@ $gray-medium-light: #eaeaea;
 }
 
 /* universal */
-
-body {
-  padding-top: 60px;
-}
 
 section {
   overflow: auto;
@@ -121,8 +117,9 @@ p {
 
 #logo { 
   float: left;
+  margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #888888;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
