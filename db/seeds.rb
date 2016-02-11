@@ -24,4 +24,7 @@ Post.create(name:"Green screen",url:"http://i.imgur.com/MN3gNsK.jpg")
 Post.create(name:"Installing power lines",url:"http://i.imgur.com/F6AvFNv.jpg")
 Post.create(name:"Pool trick shot",url:"http://i.imgur.com/IaLF2FQ.gif")
 Post.create(name:"Mountain bike backflip",url:"http://i.imgur.com/NhXvk7O.gif")
+Post.create(name:"Hostess CupCakes factory",url:"http://i.imgur.com/6Hc5n2C.gif")
+Post.create(name:"Slacklining between hot air balloons (with a parachute)",url:"http://i.imgur.com/5cQ4T1a.gif")
+
 

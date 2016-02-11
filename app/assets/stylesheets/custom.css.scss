@@ -2,9 +2,10 @@
 @import "bootstrap";
 
 /* layout */
-html {
+html, body, .container-posts {
   position: relative;
   height: 100%;
+  background-color: #ededed;
 }
 
 /* mixins, variables, etc. */
@@ -26,36 +27,19 @@ $gray-medium-light: #eaeaea;
   @include box_sizing;
 }
 
-.btn-50-width {
-  float: right;
-  width: 50%;
-  min-height: 75px;
-  font-size: 2em;
-}
-
 .post-title {
-  font-size: 3em;
+  font-size: 2vh;
+  z-index: 5;
 }
 
 .post-image {
-  width: 100%;
-  max-height: 85%;
 }
 
 @media screen and (max-width: 810px){
-  .btn-50-width {
-    font-size: 3em;
-  }
-
   .post-title {
-    font-size: 4em;
-    font-weight: bold;
   }
 
   .post-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 75px;
   }
 }
 
@@ -63,7 +47,7 @@ $gray-medium-light: #eaeaea;
   position: fixed;
   left: 0;
   bottom: 0;
-  heigth: 75px;
+  heigth: 15vh;
   width: 100%;
   margin: 0 auto;
   z-index: 2;
