@@ -1,11 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* layout */
 html, body, .container-posts {
-  position: relative;
-  height: 100%;
-  background-color: #ededed;
+  @include box_sizing(border-box);
+}
+
+
+.container-body {
+  height: 85%;
+  @include box_sizing(border-box);
 }
 
 /* mixins, variables, etc. */
@@ -28,29 +31,29 @@ $gray-medium-light: #eaeaea;
 }
 
 .post-title {
-  font-size: 2vh;
-  z-index: 5;
+  font-size: 2vh !important;
+  z-index: 2;
 }
 
 .post-image {
-}
-
-@media screen and (max-width: 810px){
-  .post-title {
-  }
-
-  .post-image {
-  }
+// Styling of height and width done in javascript based on aspect ratio
 }
 
 .post-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  heigth: 15vh;
+  height: 10%;
   width: 100%;
   margin: 0 auto;
   z-index: 2;
+  @include box_sizing;
+}
+
+#more-button {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  font-size: 2vh !important;
+  @include box_sizing;
 }
 
 /* universal */
@@ -159,7 +162,7 @@ input, textarea, select, .uneditable-input {
 }
 
 input {
-  height: auto !important;
+  // height: auto !important;
 }
 
 #error_explanation {

@@ -4,7 +4,7 @@
 <p class="post-title"><%= @post.name %>
 </p>
 
-<%= image_tag @post.url.strip.html_safe, class: "post-image" %>
+<%= image_tag @post.url.strip.html_safe, class: "post-image", data: {imagewidth: FastImage.size(@post.url.strip.html_safe)[0], imageheight: FastImage.size(@post.url.strip.html_safe)[1] } %>
 <p>
 Source: <%= @post.url.strip.html_safe %>
 </p>
