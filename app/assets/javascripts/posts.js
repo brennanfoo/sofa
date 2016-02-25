@@ -2,6 +2,7 @@ var ready = function() {
 
   var setImageSize = function(){
     var postImage = $(".post-image");
+    var postTitle = $(".post-title");
     var imgWidth = postImage.data("imagewidth");
     console.log("Image Width: "+ imgWidth);
     var imgHeight = postImage.data("imageheight");
@@ -17,11 +18,26 @@ var ready = function() {
     console.log("Window Aspect Ratio: " + windowAspectRatio);
 
     if (windowAspectRatio > imgAspectRatio) {
-      postImage.attr("height","85%");
-      console.log("Window aspect ratio > image aspect ratio; set img height to 85%");
+      postImage.attr("height","83%");
+      postImage.attr("width","auto");
+      console.log("Window aspect ratio > image aspect ratio; set img height to 83%");
+      postTitle.css({
+        position: "fixed",
+        'background-color': 'white',
+        'left': '50px',
+        'margin': '20px 0px 20px 0px'
+        });
     } else {
       postImage.attr("width","100%");
-          console.log("Window aspect ratio < image aspect ratio; set img width to 100%");
+      postImage.attr("height","auto");
+      console.log("Window aspect ratio < image aspect ratio; set img width to 100%");
+      postTitle.css({
+        position: "relative",
+        'background-color': 'transparent',
+        'left': '0px',
+        'margin': '20px 0px 20px 0px'
+        });
+      console.log("post-title position: relative;");
     }
   }
 
